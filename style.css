@@ -20,16 +20,15 @@ body{
     color: white;
 
 }
-#clock{
-    font-size:6.5rem;
-    font-family: monospace;
-    font-weight: bold;
-    color:white;
-    /* backdrop-filter: blur(15px); */
-    margin-top:20vh;
-}
-h1{
+.heading{
     margin-top: 5vh;
+}
+#clock{
+        font-family: monospace;
+        font-weight: bold;
+        color:white;
+        backdrop-filter: blur(15px);
+        margin-top:20vh;
 }
 footer{
     position: fixed;
@@ -39,4 +38,36 @@ footer{
     color: white;
     font-family: Arial, sans-serif;
     font-size: 14px;
+}
+
+@media screen and (min-width:425px){
+    body{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    #clock{
+        font-size: 2.5rem;
+        padding:20px;
+    }
+    .heading{
+        font-size: 1.3rem;
+        font-weight: bolder;
+    }
+}
+
+@media screen and (min-width:768px){
+    #clock{
+        font-size: 4rem;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width:1024px){
+    #clock{
+        font-size:6.5rem;
+    }
 }
